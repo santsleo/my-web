@@ -537,6 +537,7 @@ input, select, textarea {
 					text-align: center;
 					top: 0;
 					width: 2.5em;
+					background-color: rgba(255, 255, 255, 0.071);
 				}
 
 				#header nav a:hover {
