@@ -1,18 +1,24 @@
 <!DOCTYPE HTML>
-<!--
-	Aerial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+
 <html>
 	<head>
-		<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
-		<link rel="manifest" href="/site.webmanifest">
+		<!-- Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=G-DYEM2Z4ECB"></script>
+			<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+			gtag('config', 'G-DYEM2Z4ECB');
+			</script>
+		<!-- Favicons -->
+			<link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png?v=1">
+			<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png?v=1">
+			<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png?v=1">
+			<link rel="manifest" href="icons/site.webmanifest">
 		<title>Santiago Leoni</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
@@ -28,34 +34,45 @@
 
 			
 			<div id="main">
-
+				<div class="alert alert-secondary alert-dismissible fade myAlert" role="alert" id="alert1">
+					Try clicking the background for some extra awesomeness 😜! 
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>
+				  <div class="alert alert-secondary alert-dismissible fade myAlert" role="alert" id="alert2">
+					There's more magic in opening this webpage on a computer 😉 
+					<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+					  <span aria-hidden="true">&times;</span>
+					</button>
+				  </div>  
 				<!-- Header -->
 					<header id="header">
 						<h1>Santiago Leoni</h1>
 						<p>Data-ficionado &nbsp;&bull;&nbsp; Learnaholic &nbsp;&bull;&nbsp; Creative</p>
 						<nav>
 							<ul>
-								<div class="tooltip">
+								<div class="tooltip2">
 									<li><a href="http://linkedin.com/in/santiago-leoni" target="_blank"
 											class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a>
 									</li>
-									<span class="tooltiptext">LinkedIn</span>
+									<span class="tooltiptext2">LinkedIn</span>
 								</div>
-								<div class="tooltip">
+								<div class="tooltip2">
 									<li><a href="https://www.goodreads.com/santileo" target="_blank"
 											class="icon solid fa-book-open"><span class="label">Goodreads</span></a>
 									</li>
-									<span class="tooltiptext">Goodreads</span>
+									<span class="tooltiptext2">Goodreads</span>
 								</div>
-								<div class="tooltip">
+								<div class="tooltip2">
 									<li><a href="https://github.com/santsleo" target="_blank" class="icon brands fa-github"><span
 												class="label">Github</span></a></li>
-									<span class="tooltiptext">Github</span>
+									<span class="tooltiptext2">Github</span>
 								</div>
-								<div class="tooltip">
+								<div class="tooltip2">
 									<li><a href="tel:+5491167166901" target="_blank" class="icon solid fa-phone"><span
 												class="label">Phone</span></a></li>
-									<span class="tooltiptext">Phone</span>
+									<span class="tooltiptext2">Phone</span>
 								</div>
 							</ul>
 						</nav>
@@ -72,6 +89,12 @@
 			window.onload = function() { document.body.classList.remove('is-preload'); }
 			window.ontouchmove = function() { return false; }
 			window.onorientationchange = function() { document.body.scrollTop = 0; }
+			// setTimeout(function(){
+			// document.getElementById('alert1').style.visibility = "visible";
+			// },4000);
 		</script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	</body>
 </html>

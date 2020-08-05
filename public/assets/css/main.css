@@ -109,7 +109,7 @@ input, select, textarea {
 		-ms-transition: border-color 0.2s ease-in-out;
 		transition: border-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: inherit;
+		color: currentColor;
 		outline: 0;
 		text-decoration: none;
 	}
@@ -409,14 +409,17 @@ input, select, textarea {
 			font-family: 'Shadows Into Light Two', sans-serif;
 			font-size: 4.35em;
 			font-weight: 900;
-			letter-spacing: -0.035em;
+			letter-spacing: -0.02em;
 			line-height: 1em;
+			text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 		}
 
 		#header p {
 			font-size: 1.25em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
+			color: rgba(255, 255, 255, 0.924);
+			font-weight: 500;
 		}
 
 		#header nav {
@@ -442,7 +445,8 @@ input, select, textarea {
 				opacity: 0;
 				position: relative;
 				top: 0;
-				width: 5.35em;
+				width: 5.5em;
+				text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
 			}
 
 				#header nav li:nth-child(1) {
@@ -542,6 +546,7 @@ input, select, textarea {
 
 				#header nav a:hover {
 					font-size: 1.1em;
+					text-decoration: none !important;
 				}
 
 					#header nav a:hover:before {
@@ -566,13 +571,13 @@ input, select, textarea {
 /* Tooltips - Inspired from w3schools.com*/
 
 	/* Tooltip container */
-	.tooltip {
+	.tooltip2 {
 		position: relative;
 		display: inline-block;
 	}
 	
 	/* Tooltip text */
-	.tooltip .tooltiptext {
+	.tooltip2 .tooltiptext2 {
 		visibility: hidden;
 		width: 120px;
 		top: 100%;
@@ -590,7 +595,7 @@ input, select, textarea {
 	}
 
 	/* Arrow */
-	.tooltip .tooltiptext::after {
+	.tooltip2 .tooltiptext2::after {
 		content: " ";
 		position: absolute;
 		bottom: 100%;  /* At the top of the tooltip */
@@ -602,10 +607,51 @@ input, select, textarea {
 	}
 	
 	/* Show the tooltip text when you mouse over the tooltip container */
-	.tooltip:hover .tooltiptext {
+	.tooltip2:hover .tooltiptext2 {
 		visibility: visible;
 		opacity: 0.6;
 	}				
+
+/* Dismissible alerts */
+
+	.myAlert {
+		position: absolute;
+		left: 3em;
+		top: 4em;
+		font-size: medium;
+		display: hidden;
+		animation: leftAppear 3s;
+		animation-delay: 6s;
+		animation-fill-mode: forwards;
+		
+	}
+
+	#alert2 {
+
+		animation-name: fromTop;
+	}
+
+	@keyframes leftAppear {
+		0% {
+			left: 0em;
+			opacity: 0;
+		}
+		100% {
+			left: 3em;
+			opacity: 1;
+		}
+	}
+
+	@keyframes fromTop {
+		0% {
+			top: 0em;
+			opacity: 0;
+		}
+		100% {
+			top: 4em;
+			opacity: 1;
+		}
+	}
 
 /* Footer */
 
@@ -797,6 +843,14 @@ input, select, textarea {
 			width: 2250px;
 		} }
 
+		#alert1 {
+			display: block;
+		}
+
+		#alert2 {
+			display: none;
+		}
+
 /* Mobile */
 
 	@media screen and (max-width: 736px) {
@@ -881,6 +935,14 @@ input, select, textarea {
 		#bg {
 			background-size: 300px auto;
 			width: 900px;
+		}
+
+		#alert1 {
+			display: none;
+		}
+
+		#alert2 {
+			display: block;
 		}
 
 	/* Header */
