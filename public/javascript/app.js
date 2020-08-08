@@ -76,7 +76,7 @@ particlesJS('particles-js',
       "out_mode": "bounce",
       "bounce": true,
       "attract": {
-        "enable": true,
+        "enable": false,
         "rotateX": 300,
         "rotateY": 500,
       }
