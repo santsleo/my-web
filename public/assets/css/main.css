@@ -209,11 +209,12 @@ input, select, textarea {
 	#particles-js{
 		width: 100%;
 		height: 100%;
-		background-color: #4372AC;
+		background-color: #4685d1;
 		background-image: url('');
 		background-size: cover;
 		background-position: 50% 50%;
 		background-repeat: no-repeat;
+		z-index: -1;
 	  }
 
 /* Main */
@@ -620,18 +621,20 @@ input, select, textarea {
 		top: 4em;
 		font-size: medium;
 		display: hidden;
-		animation: leftAppear 3s;
+		animation: fromLeft 3s;
 		animation-delay: 6s;
 		animation-fill-mode: forwards;
 		
 	}
 
 	#alert2 {
-
+		left: auto;
+		margin-left: 1.5em;
+		margin-right: 1.5em;
 		animation-name: fromTop;
 	}
 
-	@keyframes leftAppear {
+	@keyframes fromLeft {
 		0% {
 			left: 0em;
 			opacity: 0;
