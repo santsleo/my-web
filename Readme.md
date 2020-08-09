@@ -1,5 +1,5 @@
-# Welcome to my personal website's (santiagoleoni.com) repo!
-I created this simple website as a personal landing page. To build it I used a bunch of great free resources:
+# Welcome to my personal website's repo!
+I created this simple website as a personal landing page (https://santiagoleoni.com/). To build it I used a bunch of great free resources:
 - The Aerial template by AJ (Twitter: @ajlkn). Provided under the CCA 3.0 license (https://html5up.net/).
 - The cool background is the particles.js javascript library by Vincent Garreau. Provided under the MIT License (MIT). (https://github.com/VincentGarreau/particles.js/)
 - The icons are from Font Awesome (https://fontawesome.com/).
