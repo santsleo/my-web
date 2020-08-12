@@ -1,6 +1,17 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
+window.onload = function () {
+  document.body.classList.remove("is-preload");
+};
+window.ontouchmove = function () {
+  return false;
+};
+window.onorientationchange = function () {
+  document.body.scrollTop = 0;
+};
+  // setTimeout(function(){
+  // document.getElementById('alert1').style.visibility = "visible";
+  // },4000);
+
+// Particles
 
 /* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
 /*
